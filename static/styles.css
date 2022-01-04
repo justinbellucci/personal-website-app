@@ -553,9 +553,10 @@ header.masthead .masthead-heading {
   height: 3rem;
   cursor: pointer;
   background-color: transparent;
+  opacity: 0.3;
 }
 .portfolio-modal .close-modal:hover {
-  opacity: 0.3;
+  opacity: 1.0;
 }
 
 .modal-dialog {
