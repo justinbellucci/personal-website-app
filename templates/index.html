@@ -39,10 +39,10 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-heading text-uppercase">Justin Bellucci</div>
-                <div class="masthead-subheading">I like machine learning and playing in the mountains.</div>
+                <div class="masthead-subheading">I love software engineering, machine learning and playing in the mountains.</div>
                 <br>
                 <br>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#projects">My Projects</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#projects">Explore Projects</a>
             </div>
         </header>
         <!-- Portfolio Grid-->
@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Projects</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">A handpicked selection of projects for your viewing pleasure.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -151,8 +151,41 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About Me</h2>
-                    <h3 class="section-subheading text-muted">I am awesome.</h3>
+                    <!-- <h3 class="section-subheading text-muted">It always seems impossible, until it's done.</h3> -->
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                          <p>It always seems impossible, until it's done..</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                          Nelson Mandela 
+                        </figcaption>
+                      </figure>
+                      <br>
                 </div>
+            </div>
+            <div class="container marketing" id="featurette_projects">
+                <!-- <hr class="featurette-divider"> -->
+                <div class="row featurette p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                    <div class="col-md-7 p-3 p-lg-5 pt-lg-3">
+                        <h2 class="featurette-heading">Software engineering is hard. <span class="text-muted">Running 100 miles is harder.</span></h2>
+                        <p class="lead">When I was student at CU Boulder I was hit by a car riding my bike to a summer linear algebra course. 
+                                        I was lucky I was not seriously injured, however I wasn't able to run more then 4 miles without severe pain.
+                                        Fast forward to August 2016. After 3 attempts and countless hours of traiing, I crossed the finishline of the 
+                                        Leadville 100 ultra marathon. Anything is possible with focus and hard work.</p>
+                        <p class="lead">I enjoy doing hard things, whether that is running in the mountains .</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#about_01_modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="/static/images/about/LT100.jpg" alt="..." />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </section>
         <!-- Footer  -->
@@ -171,6 +204,33 @@
                 </div>
             </div>
         </footer>
+        <!-- Portfolio Modals-->
+        <!-- About 01 Modal-->
+        <div class="portfolio-modal modal fade" id="about_01_modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal fa fa-times" data-bs-dismiss="modal"></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Leadville 100</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="/static/images/about/LT100.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <img class="img-fluid d-block mx-auto" src="/static/images/about/run_01.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <img class="img-fluid d-block mx-auto" src="/static/images/about/ski_01.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <img class="img-fluid d-block mx-auto" src="/static/images/about/ski_02.jpg" alt="..." />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Bootstrap core Javascript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!-- Custom Javascript -->
