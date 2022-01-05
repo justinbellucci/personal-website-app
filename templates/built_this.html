@@ -25,10 +25,12 @@
         <section class="page-section-projects">
             <div class="container-sm text-center divider">
                 <h1 class="display-2">How I Built This</h1>
-                <p class="lead text-muted">This app is trained using an AWS Sagemaker notebook instance and the XGBoost Algorithm. 
-                    The trained model is deployed on a serverless endpoint, integrated with AWS Lamdbda and API Gateway. Check out 
-                    the <a class="link-primary" href="https://github.com/justinbellucci/sentiment-analysis-app/blob/master/train_xgboost.ipynb" target="_blank">notebook</a> 
-                    on my GitHub for details.</p>
+                <h3 class="lead">This website is part portfolio and part web application that allows for user interactivity. 
+                    The front end is built using HTML, Flask, Bootstrap, JQuery, and D3 and is deployed 
+                    on AWS EC2 using Elastic Beanstalk. Git and AWS CodePipeline are integrated for version control 
+                    and continuous deployment. The Machine Learning portions of my web app are built using AWS 
+                    Sagemaker, PyTorch, and XGBoost, then deployed to a serverless endpoint. A REST API 
+                    and lambda function work together to serve the predictions from the model to the client.</h3>
             </div>
             <div class="container">
                 <img class="img-fluid" src="/static/images/architecture.svg" alt="..." />
@@ -39,7 +41,7 @@
         <!-- Footer -->
         <footer class="footer mt-auto py-3 bg-light">
             <div class="container">
-                <p class="text-muted text-center">Made with AWS Sagemaker, API Gateway, AWS Lambda, XGBoost, Flask, Bootstrap, and <i class="fa fa-heart" aria-hidden="true"></i>.</p>
+                <p class="text-muted text-center">Made with Git, AWS Sagemaker, AWS API Gateway, AWS Lambda, XGBoost, PyTorch, Python, HTML, JQuery, D3, Flask, Bootstrap, and <i class="fa fa-heart" aria-hidden="true"></i>.</p>
             </div>
         </footer>
 
