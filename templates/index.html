@@ -30,6 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#built_this">How I Built This</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                     </ul>
                 </div>
@@ -39,7 +40,7 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-heading text-uppercase">Justin Bellucci</div>
-                <div class="masthead-subheading">I love software engineering, machine learning and playing in the mountains.</div>
+                <div class="masthead-subheading">I like software engineering, machine learning, and big mountains.</div>
                 <br>
                 <br>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#projects">Explore Projects</a>
@@ -50,7 +51,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Projects</h2>
-                    <h3 class="section-subheading text-muted">A handpicked selection of projects for your viewing pleasure.</h3>
+                    <h3 class="section-subheading text-muted">A handpicked selection of my favorite projects.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -101,15 +102,15 @@
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                         <!-- Portfolio item 4-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" href="{{ url_for('built_this') }}" target="_blank">
+                            <a class="portfolio-link" href="https://github.com/justinbellucci/Unscented-Kalman-Filter" target="_blank">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="/static/images/built_this.svg" alt="..." />
+                                <img class="img-fluid" src="/static/images/UKF_small.gif" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">How I Built This</div>
-                                <div class="portfolio-caption-subheading text-muted">AWS application deployment architecture</div>
+                                <div class="portfolio-caption-heading">Unscented Kalman Filter</div>
+                                <div class="portfolio-caption-subheading text-muted">C++, PCL, Eigen, CMake, Lidar, and Radar </div>
                             </div>
                         </div>
                     </div>
@@ -130,51 +131,64 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <!-- Portfolio item 6-->
-                        <!-- <div class="portfolio-item">
-                            <a class="portfolio-link" href="#portfolioModal6" target="_blank">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" href="https://www.hivetechsolutions.com" target="_blank">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="/static/3.jpg" alt="..." />
+                                <img class="img-fluid" src="/static/images/HTS_small.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Smart-Hive</div>
+                                <div class="portfolio-caption-heading">HiveTech</div>
                                 <div class="portfolio-caption-subheading text-muted">Hardware and Software Design</div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- How I built This -->
+        <section class="page-section" id="built_this">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">How I Built This</h2>
+                    <h3 class="lead">This website is part portfolio and part web application with user interactivity. 
+                                    The front end is built using HTML, Flask, Bootstrap, JQuery, and D3 and is deployed 
+                                    on AWS EC2 using Elastic Beanstalk. CI/CD updates are made using Git and AWS 
+                                    CodePipeline. The Machine Learning portions of my web app are built using AWS 
+                                    Sagemaker, XGBoost, and PyTorch and deployed to a serverless endpoint. A REST API 
+                                    and lambda function serve the predictions from the model via a HTTP post method 
+                                    from the client.</h3>
+                </div>
+                <img class="img-fluid" src="/static/images/architecture.svg" alt="..." />
+            </div>
+        </section>
         <!-- About Me -->
-        <section class="page-section" id="about">
+        <section class="page-section bg-light" id="about">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About Me</h2>
-                    <!-- <h3 class="section-subheading text-muted">It always seems impossible, until it's done.</h3> -->
                     <figure class="text-center">
                         <blockquote class="blockquote">
-                          <p>It always seems impossible, until it's done..</p>
+                          <p>"Make friends with pain, and you will never be alone."</p>
                         </blockquote>
-                        <figcaption class="blockquote-footer">
-                          Nelson Mandela 
-                        </figcaption>
-                      </figure>
-                      <br>
+                        <figcaption class="blockquote-footer">Ken Chlouber</figcaption>
+                    </figure>
+                    <br>
                 </div>
             </div>
             <div class="container marketing" id="featurette_projects">
                 <!-- <hr class="featurette-divider"> -->
-                <div class="row featurette p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-                    <div class="col-md-7 p-3 p-lg-5 pt-lg-3">
-                        <h2 class="featurette-heading">Software engineering is hard. <span class="text-muted">Running 100 miles is harder.</span></h2>
-                        <p class="lead">When I was student at CU Boulder I was hit by a car riding my bike to a summer linear algebra course. 
-                                        I was lucky I was not seriously injured, however I wasn't able to run more then 4 miles without severe pain.
-                                        Fast forward to August 2016. After 3 attempts and countless hours of traiing, I crossed the finishline of the 
-                                        Leadville 100 ultra marathon. Anything is possible with focus and hard work.</p>
-                        <p class="lead">I enjoy doing hard things, whether that is running in the mountains .</p>
+                <div class="row featurette p-4 pb-4 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                    <div class="col-md-7 p-3 p-lg-4">
+                        <h2 class="featurette-heading pt-lg-3 pb-4">Software engineering is hard, <span class="text-muted">so is running 100 miles.</span></h2>
+                        <p class="lead">I am always looking for the next challenge and exploring what could be possible,        
+                                        even if it means being a little uncomfortable along the way. The 
+                                        <a class="link-primary" href="https://www.leadvilleraceseries.com" target="_blank">Leadville 100</a>  
+                                        run seemed impossible, until I crossed the finish line. That is what I love about machine 
+                                        learning and running big mountains. They seem impossible, until they aren’t.</p>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 pb-4 pe-lg-5">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#about_01_modal">
                                 <div class="portfolio-hover">
@@ -185,14 +199,13 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </section>
         <!-- Footer  -->
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Justin Bellucci 2021</div>
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Justin Bellucci 2022</div>
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="https://gitlab.com/justinbellucci" target="_blank"><i class="fab fa-gitlab"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="https://github.com/justinbellucci" target="_blank"><i class="fab fa-github"></i></a>
@@ -215,15 +228,7 @@
                             <div class="col-lg-12">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Leadville 100</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                     <img class="img-fluid d-block mx-auto" src="/static/images/about/LT100.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <img class="img-fluid d-block mx-auto" src="/static/images/about/run_01.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <img class="img-fluid d-block mx-auto" src="/static/images/about/ski_01.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <img class="img-fluid d-block mx-auto" src="/static/images/about/ski_02.jpg" alt="..." />
                                 </div>
                             </div>
                         </div>
