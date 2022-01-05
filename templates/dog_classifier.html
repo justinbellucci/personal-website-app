@@ -25,12 +25,15 @@
         <section class="page-section-projects">
             <div class="container-sm text-center divider">
                 <h1 class="display-2">Dog Breed Classifier</h1>
-                <p class="lead text-muted">Using a modified DenseNet121 neural network and OpenCV, this app 
-                    will predict the breed of a dog in an image and output the top five classes. It will handle cases 
-                    for a dog, person, and not a dog. If there is a person in the image the model will return the dog 
-                    breed that the person most resembles. The associated code for training the model using PyTorch 
-                    can be found on my <a class="link-primary" href="https://github.com/justinbellucci/app_dog_breed_classifier" target="_blank">Github page</a>  
-                    for this project. Please upload a jpg imge less than 1 MB.</p>
+                <p class="lead text-muted">Using a modified DenseNet121 neural network and OpenCV, this app will 
+                    predict the breed of a dog in an image and output the top five classes. A transfer learning approach 
+                    to training was taken by replacing the fully connected layer of the neural network with one particular 
+                    to the number of classes in this project. The model was trained with the convolutional layers 
+                    frozen so as not to backpropagate the parameters through the network. It can handle cases for a dog, person, and not a dog. 
+                    If there is a person in the image the model will return the dog breed that the person most resembles. 
+                    The associated code for training the model using PyTorch can be found on my 
+                    <a class="link-primary" href="https://github.com/justinbellucci/app_dog_breed_classifier" target="_blank">Github page</a>  
+                    for this project. Please upload a jpg image less than 1 MB.</p>
             </div>
             <div class="container-sm mb-4 mt-4">
                 <div class="row align-items-center">
