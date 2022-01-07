@@ -1,8 +1,13 @@
-# Beta - Personal Website
-Using a midified VGG16 neural network and OpenCV, this Flask application will predict the breed of the dog with a certain probability and output the topk (k=5) results. The application handles cases for a dog, person, and not a dog. Using a haarcascade alogrithm the app will detect if there is a person in the image, then return the dog breed that the person looks most likely resembles. Enjoy!
+# Personal Website
+This website is part portfolio and part web application that allows for user interactivity. 
+The front end is built using HTML, Flask, Bootstrap, JQuery, and D3 and is deployed 
+on AWS EC2 using Elastic Beanstalk. Git and AWS CodePipeline are integrated for version control 
+and continuous deployment. The Machine Learning portions of the site are built using AWS 
+Sagemaker, PyTorch, and XGBoost, then deployed to a serverless endpoint. A REST API 
+and lambda function work together to serve the predictions from the model to the client. Enjoy!
+
 
 <p align="center">
-<img width="700" src = 'backend/assets/DogClassifierApp.gif'>
+<img width="700" src = 'static/images/architecture.svg'>
 </p>
 
-Stay tuned for more additions to this projects! 
