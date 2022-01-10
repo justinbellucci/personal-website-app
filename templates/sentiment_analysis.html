@@ -34,7 +34,7 @@
             </div>
             <div class="container mt-4">
                 <h2 class="text-center section-heading">Is your movie review positive, or negative?</h2>
-                <p class="text-center"><b>NOTE:</b> Since the model is deployed on a serveless endpoint there is a delay in processing due to a cold start. You may have to hit submit a few times at first.</p>
+                <p class=" lead text-center"><b>NOTE:</b> The serverless endpoint has a cold start if not used for a while. Please hit submit again after 20 seconds.</p>
                 <form method="POST"
                       action= "https://twd7hspp25.execute-api.us-west-2.amazonaws.com/beta/" 
                       onsubmit="return submitForm(this);"
